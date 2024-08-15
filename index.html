@@ -19,7 +19,7 @@
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-<a href="#" class="nav__logo">Tailor</a>
+<a href="#" class="nav__logo">Sazzad</a>
 <div class="nav__menu" id="nav-menu">
    <ul class="nav__list">
       <li>
@@ -63,8 +63,8 @@
 <div class="home__container container grid">
    <img src="assets/img/home-profile1.jpg" alt="image" class="home__img">
 <div class="home__data">
-   <h1 class="home__name">Sazzad <br>Hossen</h1>
-   <h3 class="home__profession"> software engineer</h3>
+   <h1 class="home__name">Sazzad Hossen</h1>
+   <h3 class="home__profession"> Software Engineer</h3>
 </div>
 <a href="#work" class="home__scroll">
    <div class="home__scroll-box">
@@ -142,7 +142,7 @@
          <!--==================== INFO ====================-->
          <section class="info section" id="info">
 <h2 class="section__title">MY INFO</h2>
-<div class="info__container container grid"> </div>
+<div class="info__container container grid"> 
             <!-- About -->
              <div class="about grid">
 <div class="about__content">
@@ -258,6 +258,7 @@ in the company.
                   </div>
                </div>
              </div>
+            </div>
          </section>
 
          <!--==================== SERVICES ====================-->
@@ -311,15 +312,15 @@ in the company.
          <section class="contact section" id="contact">
          <h2 class="section__title">CONTACT ME</h2>
          <div class="contact__container container grid">
-            <form action="" class="contact__form grid "id="contact-form" >
+            <form action="" class="contact__form grid" id="contact-form">
                <div class="contact__group grid">
-                  <input type="text" name="" placeholder="Names"  class="text contact__input">
-                  <input type="email" name="" placeholder="Email"  class="text contact__input">
+                   <input type="text" name="user_name" placeholder="Names" class="text contact__input">
+                   <input type="email" name="user_email" placeholder="Email" class="text contact__input">
                </div>
-               <textarea name="" placeholder="Message" required class="contact__input contact__area"></textarea>
+               <textarea name="user_message" placeholder="Message" required class="contact__input contact__area"></textarea>
                <button type="submit" class="button contact__button">Send Message</button>
                <p class="contact__message" id="contact-message">Message</p>
-            </form>
+           </form>
             <div class="contact__social grid">
                <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
                   <i class="ri-facebook-circle-line"></i>
@@ -340,17 +341,34 @@ in the company.
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-
+ <div class="footer__container container grid">
+   <ul class="footer__link">
+      <li>
+         <a href="#home" class="footer__link">Home</a>
+      </li>
+      <li>
+         <a href="#work" class="footer__link">Work</a>
+      </li>
+      <li>
+         <a href="#info" class="footer__link">Info</a>
+      </li>
+   </ul>
+   <span class="footer__copy">
+      &#169; All Rights Reserved By Bedimcode
+   </span>
+ </div>
       </footer>
 
       <!--========== SCROLL UP ==========-->
-
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
 
       <!--=============== EMAIL JS ===============-->
-      <script src=""></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
